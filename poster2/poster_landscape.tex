@@ -9,6 +9,7 @@
 \usepackage{rotating}
 \usepackage{bm}
 \usepackage{url}
+\usepackage{colortbl}
 
 \usepackage{graphicx}
 \usepackage{multicol}
@@ -169,56 +170,53 @@
       \tikz{\useasboundingbox (-0.2em,-0.32em) rectangle(0.2em,0.32em); \draw[draw=black,fill=lightblue,line width=0.03em] (0,0) circle(0.18em);}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Introduction}{name=problem,column=0,row=0}{
+  \headerbox{Introduction}{name=introduction,column=0,row=0}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   Introduction: area of research (prepare focus attention) and state main hypothesis of the research, mention significance of the research.
-   % \begin{enumerate}\compresslist
-   %    \item Appearance changes due to lighting and pose
-   %    \item Occlusions
-   %    \item Speed: Interactive editing requires faster than framerate calculation
-   % \end{enumerate}
+   % Introduction: area of research (prepare focus attention) and state main hypothesis of the research, mention significance of the research.
+   \indent We investigated whether air pollution exposures are related
+to methylation on genes related to two cardiovascular pathways
+\begin{itemize} \compresslist
+  \item Ambient particulate matter (PM) has been associated with
+mortality and morbidity for cardiovascular disease (CVD)
+\item MicroRNAs control gene expression at a post-transcriptional
+level.
+\item Altered microRNAs expression has been reported in
+processes related to CVD and PM exposure, e.g. systemic
+inflammation, endothelial dysfunction and atherosclerosis.
+\end{itemize}
    \vspace{0.3em}
  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Aims/Objectives}{name=contribution,column=1,row=0,bottomaligned=problem}{
+  \headerbox{Aims/Objectives}{name=contribution,column=1,row=0,bottomaligned=introduction}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   ...... 
+   To investigate the association of exposure to ambient articles and blood-leukocyte expression changes in fourteen candidate microRNAs.
    \vspace{0.3em}
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Results}{name=results,column=2,span=2,row=0}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %   \drawvideo{5}{40}{%
-  %     \includegraphics[width=0.2\linewidth]{red-4-sec_000_rastered}%
-  %       \includegraphics[width=0.2\linewidth]{red-4-sec_024_rastered}%
-  %       \includegraphics[width=0.2\linewidth]{red-4-sec_048_rastered}%
-  %       \includegraphics[width=0.2\linewidth]{red-4-sec_072_rastered}%
-  %       \includegraphics[width=0.2\linewidth]{red-4-sec_095_rastered}%
-  %   }
-  % \begin{tabular*}{\linewidth}{*{5}{@{}p{0.2\linewidth}@{}}}
-  %   {\hfill{}Frame 0\hfill{}} & {\hfill{}24\hfill{}} &  {\hfill{}48\hfill{}} &  {\hfill{}72\hfill{}} & {\hfill{}95\hfill{}}
-  % \end{tabular*}
-  % \\[1em]
-  \cite{air_pollution_gen}, \cite{air_microRNA}
-  \\
-  \indent Results: could be replaced by 
-  \begin{enumerate}
-    \item Proposals for experiments (how to test hypothesis);
-    \item summary of topic of noble prized scientist
-    \item how to continue
-    \item propose tech application
-    \item any other idea you have
-  \end{enumerate}    
+    \drawvideo{2}{40}{%
+       \includegraphics[height=12.em]{res_pm25}
+       \includegraphics[height=12.em]{res_pm25}
+       \includegraphics[height=12.em]{res_pm25}
+       \includegraphics[height=12.em]{res_pm25}
+    }
+  \begin{tabular*}{\linewidth}{*{5}{@{}p{0.5\linewidth}@{}}}
+    {\hfill{}MA\hfill{}}
+  \end{tabular*}
+  \\[1em]
+    
   \vspace{-0.6em}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{References}{name=references,column=0,above=bottom}{
+  \headerbox{References}{name=references,column=3,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \smaller
     \bibliographystyle{ieee}
     \renewcommand{\section}[2]{\vskip 0.05em}
+    \nocite{*}
     \bibliography{biblio}
     %   \begin{thebibliography}{1}\itemsep=-0.01em
     %   \setlength{\baselineskip}{0.4em}
@@ -245,34 +243,40 @@
    \vspace{0.3em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Else free space}{name=references,column=3,aligned=references,above=bottom}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  ......
-   \vspace{0.3em}
-  }
+%   \headerbox{Else free space}{name=references,column=3,aligned=references,above=bottom}{
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   ......
+%    \vspace{0.3em}
+%   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Conclusion}{name=speed,column=2,span=2,row=0,below=results,above=references}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \indent Conclusions: how we interpret data from results, does it support our hypothesis. Open questions and plans.......
+  \indent Exposure to ambient particles could cause a downregulation of microRNAs involved in processes related to PM exposure, i.e. inflammation, vascular dysfunction and atherosclerosis.
+  \\Open questions and plans.......
   \vspace{0.0em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Method}{name=method,column=0,below=problem,bottomaligned=speed}{
+  \headerbox{Method}{name=method,column=0,below=introduction,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % \noindent{\centering\includegraphics[width=0.95\linewidth]{}\\}
-  \indent Methods - methods can be merged with the legends of the figures where  the results obtained by applying that method are shown .....
+  \noindent
+  \begin{tabular}{  p{1.6cm} p{5.4cm} }
+   {\bf Study \newline population} & \textbullet~153 elderly males from the Normative Aging Study \\
+     & One visit between December 2005 and May 2007.\\    
+    \hline
+    {\bf Explosure} & \textbullet~Fine PM ($PM_{2.5}$), black carbon (BC), organic carbon (OC) and sulfates ($SO_4^{2-}$) measured at a stationary ambient monitoring site. Exposure in different time windows [4-hours to 28-days moving averages (MA)] \\
+    \arrayrulecolor{blue}\hline
+    {\bf Micro \newline RNAs} & \textbullet~We used stem-loop quantitative real-time RT-PCR to detect and quantify 14 miRNAs involved in processes related to systemic inflammation, endothelial dysfunction and atherosclerosis \\
+    \arrayrulecolor{blue}\hline
+    {\bf Statistical analysis}
+    & \textbullet~Linear regression models, adjusted for age, body mass index (BMI), cigarette smoking (never, former, current), pack-years, percent of granulocytes, to control for possible shifts in leukocyte differential count, date, and seasonality (using sine and cosine), were used to assess effects of particles 
+    \\ & \textbullet~Effect estimates ($\beta$) and their 95\% confidence intervals (CI) are presented as percent changes per interquartile range (IQR) change of pollutant at each averaging time period using the formula ($e^{\beta*IQR}$) × 100.
+  \end{tabular}
    \vspace{0.3em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Free space}{name=background model,column=1,below=problem,bottomaligned=speed}{
+  \headerbox{Free space}{name=background model,column=1,below=introduction,bottomaligned=speed}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\noindent\begin{tabular}{r@{\hspace{0.3em}}c@{\hspace{1.5em}}c@{}}
-& With & Without\\
-& background model & background model\\
-\begin{sideways}{\makebox[0.37\linewidth][c]{Ridge of the lips}}\end{sideways} &
-\includegraphics[width=0.40\linewidth]{candidates_lips_ridge_left_bg} &
-\includegraphics[width=0.40\linewidth]{candidates_lips_ridge_left_no_bg} \\[2em]
-\end{tabular}
   ........
   \vspace{0.3em}
 }
