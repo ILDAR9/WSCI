@@ -146,9 +146,9 @@
   % Eye Catcher
   {\includegraphics[height=6em]{logo_left}} 
   % Title
-  {\bf\textsc{Epigenetic Effects of Air Pollution}\vspace{0.5em}}
+  {{\bf\textsc{Air pollutioution - the problem for generation}\vspace{0.5em}} \\ Epigenetic effects of air pollution}
   % Authors
-  {\textsc{10: Team nickname}}
+  {\textsc{Team \#5}}
   % University logo
   {% The makebox allows the title to flow into the logo, this is a hack because of the L shaped logo.
     \includegraphics[height=9.0em]{logo_wsci}
@@ -185,30 +185,36 @@ inflammation, endothelial dysfunction and atherosclerosis.
  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Aims/Objectives}{name=contribution,column=1,row=0,bottomaligned=introduction}{
+  \headerbox{Aims/Objectives}{name=contribution,column=0,row=0,below=introduction,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    To investigate the association of exposure to ambient articles and blood-leukocyte expression changes in fourteen candidate microRNAs.
    \vspace{0.3em}
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Results}{name=results,column=2,span=2,row=0}{
+\headerbox{Future works}{name=future_works,column=3,span=1,row=0}{
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \begin{tabular*}{\linewidth}{*{5}{@{}p{0.6\linewidth}@{}}}
-    {Figure A\hfill{}Figure B\hfill{}}
-  \end{tabular*}
-    \drawvideo{2}{40}{%
-       \includegraphics[height=12.em]{res_pm25}
-       \includegraphics[height=12.em]{res_bc}
-       \includegraphics[height=12.em]{res_oc}
-       \includegraphics[height=12.em]{res_so}
-    }
-  \begin{tabular*}{\linewidth}{*{5}{@{}p{0.7\linewidth}@{}}}
-    {Figure C\hfill{}Figure D\hfill{}}
-  \end{tabular*}
-  \\[1em]
+  % \begin{tabular*}{\linewidth}{*{5}{@{}p{0.6\linewidth}@{}}}
+  %   {Figure A\hfill{}Figure B\hfill{}}
+  % \end{tabular*}
+  %   \drawvideo{2}{40}{%
+  %      \includegraphics[height=12.em]{res_pm25}
+  %      \includegraphics[height=12.em]{res_bc}
+  %      \includegraphics[height=12.em]{res_oc}
+  %      \includegraphics[height=12.em]{res_so}
+  %   }
+  % \begin{tabular*}{\linewidth}{*{5}{@{}p{0.7\linewidth}@{}}}
+  %   {Figure C\hfill{}Figure D\hfill{}}
+  % \end{tabular*}
+  % \\[1em]
     
-  \vspace{-0.6em}
+  \vspace{0.3em}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{References}{name=references,column=3,above=bottom}{
@@ -232,35 +238,19 @@ inflammation, endothelial dysfunction and atherosclerosis.
     
    \vspace{0.3em}
   }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{A Future Direction}{name=questions,column=1,span=2,aligned=references,above=bottom}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \begin{multicols}{2}
-    ........
-    
-    ..........
-  \end{multicols}
-   \vspace{0.3em}
-  }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   \headerbox{Else free space}{name=references,column=3,aligned=references,above=bottom}{
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   ......
-%    \vspace{0.3em}
-%   }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Conclusion}{name=speed,column=2,span=2,row=0,below=results,above=references}{
+\headerbox{Conclusion}{name=speed,column=3,span=1,below=future_works,above=references}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \indent Exposure to ambient particles could cause a downregulation of microRNAs involved in processes related to PM exposure, i.e. inflammation, vascular dysfunction and atherosclerosis.
   \\Open questions and plans.......
   \vspace{0.0em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Method}{name=method,column=0,below=introduction,above=bottom}{
+  \headerbox{Method}{name=method,column=1,row=0,span=2}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % \noindent{\centering\includegraphics[width=0.95\linewidth]{}\\}
   \noindent
-  \begin{tabular}{  p{1.6cm} p{5.4cm} }
+  \begin{tabular}{  p{1.6cm} p{13.cm} }
    {\bf Study \newline population} & \textbullet~153 elderly males from the Normative Aging Study \\
      & One visit between December 2005 and May 2007.\\    
     \hline
@@ -274,11 +264,9 @@ inflammation, endothelial dysfunction and atherosclerosis.
   \end{tabular}
    \vspace{0.3em}
   }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Free space}{name=background model,column=1,below=introduction,bottomaligned=speed}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  ........
-  \vspace{0.3em}
+
+\headerbox{Deaths attributable to outdoor air pollution, 2008}{name=dead_map,column=1,row=0,span=2,below=method}{
+  \noindent{\centering\includegraphics[width=0.95\linewidth]{air_pollution_map_min}}
 }
 
 \end{poster}
