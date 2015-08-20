@@ -146,7 +146,7 @@
   % Eye Catcher
   {\includegraphics[height=6em]{logo_left}} 
   % Title
-  {{\bf\textsc{Air pollutioution - the problem for generation}\vspace{0.5em}} \\ \scalebox{.7}{Epigenetic effects of air pollution}}
+  {{\bf\textsc{Air pollutioution - the problem for generation}\vspace{0.5em}} \\ \scalebox{.7}{The Effect of Ambient Air Particulate Matter to the Sperm Epigenome}}
   % Authors
   {\textsc{Team \#5}}
   % University logo
@@ -173,8 +173,9 @@
   \headerbox{Introduction}{name=introduction,column=0,row=0}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 You know that air pollution is affecting millions of people around the world, but how exactly?
-\\
-Your brain, your heart, and most of all your lungs suffer every day, but there is something so small yet so important, that affects you and the generations you will give life to. So far researches have focused on macroscopic level (vital organs, blood etc.) but now something new and far more concerning has surfaced. The newest discoveries of the scientific world show that certain particles in the air due to pollution can damage our genetic system.  These particles don't change the {\bf DNA} sequence directly but influence the process of genetic expression explained by a growing field of molecular biology, epigenetics. Epigenetics is the study of changes in variation in the genetic material specifically gene expression that is attributed to external environmental factors. This phenomena does not only produce a present and concerning problem, but also a future one. This field is specifically called transgenerational epigenetics which could be both maternal and paternal. Exposure to air pollution has long been connected to male infertility and low sperm quality but a deeper molecular understanding of the mechanism on how it occurs is poorly understood. Studies conducted on sperm have showed that the epigenetic changes in sperm cells is passed on to offspring after successful fertilization, thus this problem perpetuates on the next generations.
+
+
+Your brain, your heart, and most of all your lungs suffer every day, but there is something so small yet so important, that affects you and the generations you will give life to. So far researches have focused on {\bf macroscopic level} (vital organs, blood etc.) but now something new and far more concerning has surfaced. The newest discoveries of the scientific world show that certain particles in the air due to pollution can damage our genetic system.  These particles don't change the {\bf DNA} sequence directly but influence the process of genetic expression explained by a growing field of molecular biology, epigenetics. {\bf Epigenetics} is the study of changes in variation in the genetic material specifically gene expression that is attributed to external environmental factors. This phenomena does not only produce a present and concerning problem, but also a future one. This field is specifically called {\bf trans-generational epigenetics} which could be both maternal and paternal. Exposure to air pollution has long been connected to male infertility and low sperm quality but a deeper molecular understanding of the mechanism on how it occurs is poorly understood. Studies conducted on sperm have showed that the epigenetic changes in sperm cells is passed on to offspring after successful fertilization, thus this problem perpetuates on the next generations.
    \vspace{0.3em}
  }
 
@@ -185,38 +186,6 @@ Your brain, your heart, and most of all your lungs suffer every day, but there i
    \vspace{0.3em}
   }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Future works}{name=future_works,column=3,span=1,row=0}{
-  If the affection of air pollution to DNA is real, then Machine Learning techniques could be used on the data obtained for classifier creation.\\
-  Output:
-\begin{itemize} \compresslist
-  \item The classifier could predict if a city has influential air pollution to DNA of the citizens in general: YES, NO (the simplest version of classifier).
-  \item more complex prediction model that is based on neural nets that gives measurable output for some Epigenetic interests.
-\end{itemize}
-  Input:
-  \begin{itemize} \compresslist
-    \item random 150 male citizens (19-50 years old)
-    \item while one year with period every 2 month
-  \end{itemize}
-  \vspace{0.3em}
-
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % \begin{tabular*}{\linewidth}{*{5}{@{}p{0.6\linewidth}@{}}}
-  %   {Figure A\hfill{}Figure B\hfill{}}
-  % \end{tabular*}
-  %   \drawvideo{2}{40}{%
-  %      \includegraphics[height=12.em]{res_pm25}
-  %      \includegraphics[height=12.em]{res_bc}
-  %      \includegraphics[height=12.em]{res_oc}
-  %      \includegraphics[height=12.em]{res_so}
-  %   }
-  % \begin{tabular*}{\linewidth}{*{5}{@{}p{0.7\linewidth}@{}}}
-  %   {Figure C\hfill{}Figure D\hfill{}}
-  % \end{tabular*}
-  % \\[1em]
-    
-  \vspace{0.3em}
-}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{References}{name=references,column=3,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -241,14 +210,12 @@ Your brain, your heart, and most of all your lungs suffer every day, but there i
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Possible Results, Conclusions and Implications}{name=speed,column=3,span=1,below=future_works,above=references}{
+\headerbox{ \scalebox{.9}{Conclusions and Implications}}{name=speed,column=3,span=1}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \noindent 
-  \begin{itemize} \compresslist
-    \item The data could suggest the effect of exposure to certain concentrations of ambient air particulate matter to the number of epigenetic marker changed for an observation time. Furthermore, any epigenetic changes observed could indicate the possibility of affecting offspring on concerned individuals on whatever mechanism of gene expression the epigenetic marker is responsible for.
-    \item The study could also provide a way of better understanding the sperm epigenome and how it is externally affected. Also, this could lead to possible mechanisms of explaining infertility problems, neonatal deaths, fetal development and paternal contributions to offspring.
-  \end{itemize}
-  \vspace{0.0em}
+  \textbullet~The data could suggest the effect of exposure to certain concentrations of ambient air particulate matter to the number of epigenetic marker changed for an observation time. Furthermore, any epigenetic changes observed could indicate the possibility of affecting offspring on concerned individuals on whatever mechanism of gene expression the epigenetic marker is responsible for.\\
+  \textbullet~The study could also provide a way of better understanding the sperm epigenome and how it is externally affected. Also, this could lead to possible mechanisms of explaining infertility problems, neonatal deaths, fetal development and paternal contributions to offspring.
+  \vspace{0.2em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{Method}{name=method,column=1,row=0,span=2}{
@@ -274,7 +241,7 @@ Your brain, your heart, and most of all your lungs suffer every day, but there i
     & \textbullet~Epigenetic changes will be quantified as the number of epigenetic marker changed for an observation event.\\
     \arrayrulecolor{blue}\hline
 
-    {\bf Data Integration} & \textbullet~For every participant, 3 general data point should be gathered for each data collection event: exposure, current health status and epigenetic changes in the sperm.
+    {\bf Data \newline Integration} & \textbullet~For every participant, 3 general data point should be gathered for each data collection event: exposure, current health status and epigenetic changes in the sperm.
 
   \end{tabular}
    % \vspace{0.3em}
@@ -282,6 +249,22 @@ Your brain, your heart, and most of all your lungs suffer every day, but there i
 
 \headerbox{Deaths attributable to outdoor air pollution, 2008}{name=dead_map,column=1,row=0,span=2,below=method}{
   \noindent{\centering\includegraphics[width=0.95\linewidth]{air_pollution_map_min}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Future works}{name=future_works,column=3,span=1,row=0,below=speed,above=references}{
+  If the affection of air pollution to DNA is real, then Machine Learning techniques could be used on the data obtained for classifier creation.\\
+  {\bf Output}:
+\begin{itemize} \compresslist
+  \item The classifier could predict if in currently a city has influential air pollution to DNA of the citizens in general: YES, NO (the simplest version of classifier);
+  \item more complex prediction model that is based on neural nets could give measurable output for some Epigenetic interests.
+\end{itemize}
+  {\bf Input Data from}:
+  \begin{itemize} \compresslist
+    \item random 150 male citizens with reproductive age 18-40 years old;
+    \item while one year with period every 2 month.
+  \end{itemize}
+  \vspace{0.3em}
 }
 
 \end{poster}
